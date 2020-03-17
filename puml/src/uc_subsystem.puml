@@ -1,0 +1,29 @@
+@startuml
+left to right direction
+
+:Chefe mit\nAmtsleitung: as chef
+:Betriebs-\nVerantwortlicher: as bv
+:Anwendungs-\nVerantwortlicher: as av
+:AGI-Betrieb: as betrieb
+
+(Projekt priorisieren\n-Siehe Projekte und Auftraege) as pprio
+
+(Betriebsanforderung\npriorisieren) as runtick
+(Endanwenderanforderung\ndefinieren / priorisieren) as usertick
+(Release als Projekt\nbeantragen) as release
+(Projekt initialisieren\n-Siehe Projekte und Auftraege) as init
+(Releasegebundene\nAnpassung definieren) as rtick
+(Ungebundene Anpassung /\nStoerung definieren) as tick
+
+
+
+chef --> pprio
+
+bv --> runtick
+av --> usertick
+av --> release
+av --> init
+
+betrieb --> rtick
+betrieb --> tick
+@enduml

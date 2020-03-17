@@ -1,0 +1,14 @@
+@startuml
+left to right direction
+
+:AGI-Alle: as agi
+:AGI-Betrieb: as betrieb
+
+(Vorhaben / Vorhabensteil\nerarbeiten) as tick
+(Hochrisiko-Aenderung\nanwenden) as risk
+tick <|-- risk
+
+agi --> tick
+betrieb --> tick
+betrieb --> risk
+@enduml

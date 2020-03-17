@@ -1,0 +1,40 @@
+@startuml
+left to right direction
+
+:Chefe mit\nAmtsleitung: as chef
+:SPOC: as spoc
+:GIS-Koordinator: as koord
+:Informatik-\nVerantwortlicher: as iv
+:Projektleiter: as pl
+
+(Vorhabensuebersicht\neines Amtes) as (amt)
+(Vorhabensuebersicht\nmehrere Aemter) as (mamt)
+amt <|-- mamt
+
+(Projekt priorisieren) as pprio
+(Projekt initialisieren) as init
+
+(Auftrag\npriorisieren) as aprio
+(Auftrag\nstrukturieren) as struct
+
+(Projektantrag erfassen) as gopro
+(Auftragsantrag erfassen) as goauf
+(Tagesgeschaeft erfassen) as gotick
+(Projekt pflegen) as pmp
+
+chef --> pprio
+chef --> mamt
+
+spoc --> mamt
+spoc --> aprio
+spoc --> struct
+spoc --> init
+koord --> amt
+koord --> goauf
+koord --> gotick
+iv --> amt
+
+iv --> gopro
+
+pl --> pmp
+@enduml
