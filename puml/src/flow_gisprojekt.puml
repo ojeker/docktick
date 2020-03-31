@@ -1,0 +1,73 @@
+@startuml
+legend top
+	Ablauf eines GIS-Projektes
+end legend
+|AG|
+start
+:Projekt bei
+IV anmelden;
+|IV / GIS-Koordinator|
+:Projekt bei
+SPOC anmelden;
+|SPOC|
+:idee}
+:Projekt in AL
+priorisieren
+(Halbjaehrlich);
+|PL|
+:Init-Meeting
+organisieren;
+:Init-Meeting
+durchfuehren;
+:initialisierung}
+:PMP Kapitel 1
+erarbeiten;
+:PMP fuer
+Konzeptphase
+erarbeiten;
+:Phasenuebergang
+bei AG beantragen;
+:Kickoff-Meetings
+durchfueren;
+|AG|
+:Projekt freigeben;
+|PL|
+:konzept}
+:Konzept AP's
+erarbeiten (lassen);
+:PMP fuer
+Realisierung
+erarbeiten;
+:Phasenuebergang
+bei AG beantragen;
+|AG|
+:Realisierung
+freigeben;
+|PL|
+:realisierung}
+:Realisierung's AP's
+erarbeiten (lassen);
+:PMP fuer
+Einfuerung
+erarbeiten;
+:Phasenuebergang
+bei AG beantragen;
+|AG|
+:Einfuerung
+freigeben;
+|PL|
+:einfuerung}
+:Einfuerungs's AP's
+erarbeiten (lassen);
+:PMP fuer
+Projektabschluss
+erarbeiten;
+:Projektabschluss
+bei AG beantragen;
+|AG|
+:Projektabschluss
+bewilligen;
+|PL|
+:abgeschlossen}
+end
+@enduml

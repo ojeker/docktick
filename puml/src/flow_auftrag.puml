@@ -1,0 +1,30 @@
+@startuml
+legend top
+	Ablauf eines Auftrages
+end legend
+
+|GIS-Koordinator|
+start
+:Auftrags-Ticket
+erstellen;
+:idee}
+:WAS-Teil zu
+Auftrag erfassen;
+|SPOC|
+:WIE-Erarbeitung
+organisieren;
+|AGI-Mitarbeiter|
+:WIE-Teil
+erarbeiten;
+|SPOC|
+:Umsetzung
+freigeben;
+:umsetzbar}
+|AGI-Mitarbeiter|
+:umsetzung}
+:Umsetzen;
+|GIS-Koordinator|
+:Abnehmen;
+:abgeschlossen}
+end
+@enduml
