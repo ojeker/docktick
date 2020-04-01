@@ -1,0 +1,34 @@
+@startuml
+legend top
+	Ablauf eines Bermuda-Projektes
+end legend
+|AG|
+start
+:Projekt bei
+IV anmelden;
+|IV / GIS-Koordinator|
+:Projekt bei
+SPOC anmelden;
+|SPOC / AGI PA|
+:idee}
+:Varianten-
+entscheid
+unterstützen;
+:initialisierung}
+:AGI-Arbeiten
+strukturieren;
+:AGI-Arbeiten
+mit PL vereinbaren;
+|AGI-Mitarbeiter|
+:konzept}
+:Konzept-
+AP's erarbeiten;
+:realisierung}
+:Realisierungs-
+AP's erarbeiten;
+:einfuerung}
+:Einfuerungs-
+AP's erarbeiten;
+:abgeschlossen}
+end
+@enduml

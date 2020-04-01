@@ -1,79 +1,22 @@
 @startuml
 legend top
-	Ablauf eines GIS-Projektes
+	Ablauf eines AGI internen Projektes
 end legend
-|AG|
+|AGI-Mitarbeiter|
 start
-:Projekt bei
-IV anmelden;
-|IV / GIS-Koordinator|
-:Projekt bei
-SPOC anmelden;
+:Projektidee mit
+Chef besprechen;
 :idee}
-|SPOC|
-:Projekt in AL
-priorisieren
-(Halbjaehrlich);
-|AG|
-:Init-Meeting
-organisieren
-(lassen);
-:Init-Meeting
-durchfuehren
-(lassen);
-:initialisierung}
-:PMP Kapitel 1
-erarbeiten (lassen);
+|AL|
+:Projekt priorisieren
+(Halbjaerlich);
 |PL|
-:PMP fuer
-Konzeptphase
-erarbeiten;
-legend bottom
-- Was macht PL ab wann --> flexibel
-end legend
-:Phasenuebergang
-bei AG beantragen;
-:Kickoff-Meetings
+:Init-Meeting
 durchfueren;
-|AG|
-:Projekt freigeben;
-|PL|
-:konzept}
-:Konzept AP's
-erarbeiten (lassen);
-:PMP fuer
-Realisierung
-erarbeiten;
-:Phasenuebergang
-bei AG beantragen;
-|AG|
-:Realisierung
-freigeben;
-|PL|
-:realisierung}
-:Realisierung's AP's
-erarbeiten (lassen);
-:PMP fuer
-Einfuerung
-erarbeiten;
-:Phasenuebergang
-bei AG beantragen;
-|AG|
-:Einfuerung
-freigeben;
-|PL|
-:einfuerung}
-:Einfuerungs's AP's
-erarbeiten (lassen);
-:PMP fuer
-Projektabschluss
-erarbeiten;
-:Projektabschluss
-bei AG beantragen;
-|AG|
-:Projektabschluss
-bewilligen;
-|PL|
-:abgeschlossen}
+:...
+ab hier
+Gleich wie bei
+GIS-Projekt
+...;
 end
 @enduml
