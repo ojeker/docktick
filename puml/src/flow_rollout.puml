@@ -1,0 +1,50 @@
+@startuml
+legend top
+	Ablauf eines Rollout-Tickets
+end legend
+|Ticket-Triage|
+start
+:Verantwortlichen
+bestimmen;
+|AGI-Mitarbeiter|
+
+:bearbeitung}
+
+:Arbeiten
+planen;
+
+:Nicht-DDL
+Aenderungen
+erarbeiten;
+
+if (DDL?) then (nein)
+
+else (ja)
+
+:Betrieb mit
+DDL-Kindticket
+beauftragen;
+
+|AGI-Betrieb|
+
+:DDL
+erarbeiten;
+
+endif
+
+|AGI-Mitarbeiter|
+:Anpassungen
+bestaetigen
+lassen;
+
+:zu Rollout
+zuweisen;
+
+|AGI-Betrieb|
+:Layer-Rollout
+durchfueren;
+
+:abgeschlossen}
+
+end
+@enduml

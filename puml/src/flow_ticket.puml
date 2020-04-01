@@ -1,0 +1,51 @@
+@startuml
+legend top
+	Ablauf eines Tickets
+end legend
+|Mitarbeiter Fachamt|
+start
+:Feststellung
+verschriftlichen
+(lassen);
+|GIS-Koordinator|
+:Ticket eröffnen;
+:entwurf}
+|Ticket-Triage|
+:Vollständigkeit
+sicherstellen;
+:bereit}
+if (Entwicklung?) then (nein)
+  if (Aufwand?) then (> 4h)
+    :An SPOC
+    weiterleiten;
+    stop
+  else (< 4h)
+  	if (Rollout?) then (ja)
+      :...
+      siehe Rollout
+      Ablauf
+      ...;
+      stop
+    else (nein)
+      |AGI-Mitarbeiter|
+      :bearbeitung}
+      :Lösung erarbeiten;
+      :abgeschlossen}
+      stop
+    endif
+  endif
+else (ja)
+  |Anw. Verantwortlicher|
+  :prorisieren und
+  terminieren;
+  :Feedback an
+  GIS-Koordinator
+  zur Priorisierung;
+  :bearbeitung}
+  :Entwickeln und
+  installieren
+  lassen;
+  :abgeschlossen}
+  stop
+endif
+@enduml

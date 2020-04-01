@@ -2,6 +2,18 @@
 
 ## Tagesgeschäft
 
+![Tagesgeschäft](puml_output/flow_ticket.png)
+
+### SOLL-Durchlaufzeiten
+
+Bemerkung: Ein Tagesgeschäft kann auch eine sehr grosse Durchlaufzeit haben, wenn dieses Beispielsweise
+eine Codeänderung (Software-Entwicklung) auslöst. Darum sind folgend nur die Durchlaufzeiten für
+Tickets aufgeführt, welche keinem Rollout zugewiesen sind.
+
+## Rollout-Ticket
+
+![Rollout-Ticket](puml_output/flow_rollout.png)
+
 ## Auftrag
 
 ![Auftrag](puml_output/flow_ablaeufe.png)
