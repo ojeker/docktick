@@ -7,7 +7,7 @@ end legend
 start
 :Auftrags-Ticket
 erstellen;
-:idee}
+:entwurf}
 :WAS-Teil zu
 Auftrag erfassen;
 |SPOC|
@@ -19,7 +19,7 @@ erarbeiten;
 |SPOC|
 :Umsetzung
 freigeben;
-:umsetzbar}
+:bereit}
 |AGI-Mitarbeiter|
 :umsetzung}
 :Umsetzen;

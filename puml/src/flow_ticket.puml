@@ -28,7 +28,7 @@ if (Entwicklung?) then (nein)
       stop
     else (nein)
       |AGI-Mitarbeiter|
-      :bearbeitung}
+      :umsetzung}
       :Lösung erarbeiten;
       :abgeschlossen}
       stop
@@ -41,7 +41,7 @@ else (ja)
   :Feedback an
   GIS-Koordinator
   zur Priorisierung;
-  :bearbeitung}
+  :umsetzung}
   :Entwickeln und
   installieren
   lassen;

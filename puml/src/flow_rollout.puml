@@ -14,7 +14,7 @@ bestimmen;
 planen;
 
 :Nicht-DDL
-Aenderungen
+Änderungen
 erarbeiten;
 
 if (DDL?) then (nein)
@@ -42,7 +42,7 @@ zuweisen;
 
 |AGI-Betrieb|
 :Layer-Rollout
-durchfüren;
+durchführen;
 
 :abgeschlossen}
 
