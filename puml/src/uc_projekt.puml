@@ -7,8 +7,8 @@ left to right direction
 :Informatik-\nVerantwortlicher: as iv
 :Projektleiter: as pl
 
-(Vorhabensuebersicht\neines Amtes) as (amt)
-(Vorhabensuebersicht\nmehrere Aemter) as (mamt)
+(Vorhabensübersicht\neines Amtes) as (amt)
+(Vorhabensübersicht\nmehrere Aemter) as (mamt)
 amt <|-- mamt
 
 (Projekt priorisieren) as pprio
@@ -19,7 +19,7 @@ amt <|-- mamt
 
 (Projektantrag erfassen) as gopro
 (Auftragsantrag erfassen) as goauf
-(Tagesgeschaeft erfassen) as gotick
+(Tagesgeschäft erfassen) as gotick
 (Projekt pflegen) as pmp
 
 chef --> pprio

@@ -19,28 +19,28 @@ erarbeiten
 :Projekt in
 AL geben zwecks
 Priorisierung
-(Halbjaehrlich);
+(Halbjährlich);
 |PL|
 :Init-Meeting
-durchfuehren;
+durchführen;
 :initialisierung}
-:PMP fuer
+:PMP für
 Konzeptphase
 erarbeiten;
-:Phasenuebergang
+:Phasenübergang
 bei AG beantragen;
 :Kickoff-Meetings
-durchfueren;
+durchfüren;
 |AG|
 :Projekt freigeben;
 |PL|
 :konzept}
 :Konzept AP's
 erarbeiten (lassen);
-:PMP fuer
+:PMP für
 Realisierung
 erarbeiten;
-:Phasenuebergang
+:Phasenübergang
 bei AG beantragen;
 |AG|
 :Realisierung
@@ -49,19 +49,19 @@ freigeben;
 :realisierung}
 :Realisierung's AP's
 erarbeiten (lassen);
-:PMP fuer
-Einfuerung
+:PMP für
+Einführung
 erarbeiten;
-:Phasenuebergang
+:Phasenübergang
 bei AG beantragen;
 |AG|
-:Einfuerung
+:Einführung
 freigeben;
 |PL|
-:einfuerung}
-:Einfuerungs's AP's
+:einführung}
+:Einführungs's AP's
 erarbeiten (lassen);
-:PMP fuer
+:PMP für
 Projektabschluss
 erarbeiten;
 :Projektabschluss

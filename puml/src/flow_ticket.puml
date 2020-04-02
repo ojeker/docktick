@@ -1,4 +1,4 @@
-@startuml
+﻿@startuml
 legend top
 	Ablauf eines Tickets
 end legend

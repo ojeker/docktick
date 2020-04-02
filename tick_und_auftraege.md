@@ -16,7 +16,7 @@ Tickets aufgeführt, welche keinem Rollout zugewiesen sind.
 
 ## Auftrag
 
-![Auftrag](puml_output/flow_ablaeufe.png)
+![Auftrag](puml_output/flow_auftrag.png)
 
 ### Punktuelle Erläuterungen
  

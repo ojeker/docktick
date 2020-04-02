@@ -2,6 +2,8 @@
 
 # Erstellt von allen *.puml Diagrammdefinitionen in ../diagrams die SVG-Grafiken in ../doc/dia
 
+export LANG=de_CH.UTF-8
+
 rm puml_output/*
 
 FILES=puml/src/*
