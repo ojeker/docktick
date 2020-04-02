@@ -1,0 +1,80 @@
+# Vorhaben
+
+Alle ausgelösten Tätigkeiten des AGI sind Vorhaben. Abhängig nach Grösse und Komplexität, Durchlaufzeit wird
+unterschieden zwischen den folgenden Vorhabenstypen:
+* Tagesgeschäft
+* Auftrag
+* Projekt
+
+Im Rahmen des Projektes "docktick" werden die Gemeinsamkeiten und Unterschiede der Vorhabenstypen erarbeitet.
+
+## Benutzte Begriffe in den Beschreibungen der Vorhaben
+
+|Begriff|Klassierung|Bemerkungen|
+|---|---|---|
+|AG|Rolle|Auftraggeber. Verantwortet, dass die Lösung den formulierten Zielen und entspricht und Aufwand und Ertrag in gutem Verhältnis stehen. Nimmt das Vorhaben ab. Wird für Aufträge und Projekte explizit gesetzt. Bei einem Tagesgeschäft ist der Ticketersteller der Auftraggeber.| 
+|AL|Rolle|Amtsleitung des AGI. Berät in strategischen Fragen den Leiter des AGI.|
+|AP|-|Arbeitspaket. Teilvorhaben innerhalb eines Projektes. Entspricht in der Grösse meist einem Auftrag.|
+|GL|-|Geschäftsleitung. Berät in strategischen Fragen den Amtsleiter.|
+|OE|-|Organisationseinheit|
+|IV|Rolle|Informatik-Verantwortlicher. Unterstützt AG und PL, insbesondere in der Projektinitialisierung.|
+|KAM|Rolle|Zentrale Ansprechperson des AIO für allen Anliegen eines Amtes bezüglich des AIO.|
+|PA|Rolle|Projekt-Ausschuss. Berät und unterstützt den Auftraggeber bezüglich der Projektsteuerung.|
+|PL|Rolle|Projektleiter. Führt das Projekt im Auftrag des Auftraggebers.| 
+|Phase|-|Dient dem geordneten Fortschreiten in Projekten und Aufträgen. Der Stand des Vorhabens wird bei einem Phasenübergang jeweils im Vieraugenprinzip überprüft.|
+|PMP|Dokument|Projektmanagement-Plan des AGI. Umfasst die wichtigsten Informationen (Rollen, Phasen, ...) bezüglich der Abwicklung eines Projektes. In den PMP wurden die für ein AGI-Projekt relevanten Hermes-Dokumente als Kapitel des PMP übernommen.|
+|SPOC|Rolle|**S**ingle **P**oint **O**f **C**ontact. Zentrale Ansprechperson für allen Anliegen eines Amtes bezüglich des AGI. Hat ähnliche Funktion wie der KAM des AIO.|
+
+### Details zu Begriffen
+
+* **Informatik-Verantwortlicher (IV):** Bezüglich der Aufwände werden die Gesamtaufwände ausgewiesen (Personell und Finanziell, über alle beteiligten OE's). Der IV bringt den 
+* **Auftraggeber (AG):** Details siehe [hier](https://www.hermes.admin.ch/de/projektmanagement/verstehen/rollen/auftraggeber.html)
+* **Phasen:** Details siehe [hier](https://www.hermes.admin.ch/de/projektmanagement/verstehen/phasen-und-meilensteine.html)
+* **Projektleiter (PL):** Details siehe [hier](https://www.hermes.admin.ch/de/projektmanagement/verstehen/rollen/projektleiter.html)
+* **Projektausschuss (PA):** Details siehe [hier](https://www.hermes.admin.ch/bva/de/onlinepublikation/index.xhtml?element=rolle_projektausschussmitglied.html)
+
+## Fortschritts-Status
+
+Es werden gemeinsame übergeordnete Fortschritts-Status angestrebt, damit Übersichten über mehrere Vorhabenstypen möglich sind. Übergeordnete Status:
+* **Entwurf:** Das Vorhaben wurde dem AGI gemeldet. Es muss aber noch ausdetailliert werden, damit es in die Umsetzung gehen kann.
+* **Bereit:** Das Vorhaben ist bereit für die Umsetzung, und wartet im AGI auf die Ressourcenfreigabe für die Umsetzung.
+* **Umsetzung:** An der Umsetzung des Vorhabens wird gearbeitet.
+* **Abgeschlossen:** Die Umsetzung ist, inklusive allfälliger Abnahmen, abgeschlossen.
+
+Sprich für alle Vorhabenstypen existiert zwecks bester Nutzung der AGI-Arbeitszeit bewusst ein "Stapel" an Vorhaben, 
+welche bereit für die Umsetzung sind, aber noch warten müssen.
+
+Warte-Gründe:
+* Zuviel laufende Arbeit im AGI.
+* Zuviele sich in Umsetzung befindende Vorhaben für das entsprechende Amt.
+* Bündelung in einem Release oder Rollout.
+* ... 
+
+### Status Mapping pro Vorhabenstyp
+
+|Vorhabenstyp|Status|Detail-Status des Vorhabenstyps|
+|---|---|---|
+|Projekt|Entwurf|Entwurf|
+|Projekt|Bereit|Bereit|
+|Projekt|Umsetzung|Initialisierung, Konzept, Realisierung, Einführung|
+|Projekt|Abgeschlossen|Abgeschlossen|
+| | | |
+|Auftrag|Entwurf|Entwurf|
+|Auftrag|Bereit|Bereit|
+|Auftrag|Umsetzung|Konzept, Realisierung|
+|Auftrag|Abgeschlossen|Abgeschlossen|
+| | | |
+|Tagesgeschäft|Entwurf|Entwurf|
+|Tagesgeschäft|Bereit|Bereit|
+|Tagesgeschäft|Umsetzung|Umsetzung|
+|Tagesgeschäft|Abgeschlossen|Abgeschlossen|
+
+## Links auf die Ablaufdiagramme
+
+[**Projekte**](projekt.md)
+
+[**Aufträge**](auftraege.md)
+
+[**Tagesgeschäft**](tagesgeschaeft.md)
+
+

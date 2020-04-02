@@ -8,14 +8,10 @@ start
 bestimmen;
 |AGI-Mitarbeiter|
 
-:bearbeitung}
+:umsetzung}
 
 :Arbeiten
 planen;
-
-:Nicht-DDL
-Änderungen
-erarbeiten;
 
 if (DDL?) then (nein)
 
@@ -33,6 +29,11 @@ erarbeiten;
 endif
 
 |AGI-Mitarbeiter|
+
+:Nicht-DDL
+Änderungen
+erarbeiten;
+
 :Anpassungen
 bestätigen
 lassen;
