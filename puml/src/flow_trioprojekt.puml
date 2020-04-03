@@ -1,6 +1,6 @@
 @startuml
 legend top
-	Ablauf eines Bermuda-Projektes
+	AGI-relevante Ablaufteile eines Trio-Projektes
 end legend
 |AG|
 start

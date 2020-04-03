@@ -22,7 +22,7 @@ Tickets aufgeführt, welche weder einem Release noch einem Rollout zugewiesen si
 
 ## Bemerkungen
 
-### Arbeiten planen
+### Schritt "Arbeiten planen"
 
 Dies ist ein wichtiger Schritt, um den stressfreien Erfolg der Änderung sicherzustellen. Wichtige Fragen in der Planung:
 * SPOC informieren, falls die Änderung viel Aufwand auslöst und mir der fachliche

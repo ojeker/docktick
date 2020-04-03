@@ -65,7 +65,7 @@ Leidiglich Projekte benötigen die folgend beschriebene Ausdetaillierung der üb
 
 [**Projekte**](projekt.md)
 
-[**Aufträge**](auftraege.md)
+[**Aufträge**](auftrag.md)
 
 [**Tagesgeschäft**](tagesgeschaeft.md)
 

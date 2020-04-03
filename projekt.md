@@ -26,9 +26,7 @@ Projekt-Kickoff mit dem Projektteam
 * Projekt und dessen Phasen vorstellen
 * Arbeiten der Konzeptphase vorstellen und verteilen
 
-# Bermuda-Projekt mit Fachamt
-
-![Trio-Projekt](puml_output/flow_trioprojekt.png)
+# Trio-Projekt mit Fachamt
 
 Trio: Im IT-Budget des AIO eingestelltes Projekt, mit Projektleitung im Fachamt
 und GIS-Anforderungen. Häufig geht es um die Beschaffung einer Fachapplikation,
@@ -45,6 +43,8 @@ Es wird seitens AGI kein Projektleiter gestellt, da:
 
 Im Diagramm sind ergänzend zum Projektablauf des AIO die AGI-Aspekte abgebildet. Die sehr wichtigen Leitlinien
 zu Beispielsweise den Phasenübergängen und der Projektorganisation sind selbstverständlich mit gemeint.
+
+![Trio-Projekt](puml_output/flow_trioprojekt.png)
 
 ## Punktuelle Erläuterungen zum Ablauf
 
