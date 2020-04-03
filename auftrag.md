@@ -22,9 +22,10 @@
 |Status von bis|Durchlaufzeit [at]|Bemerkungen|
 |---|---|---|
 |entwurf - bereit|5||
-|bereit - umsetzung|1 - 20|"Wartezeit". Ist stark abhängig von AGI-Auslastung|
-|umsetzung - abgeschlossen|7||
+|bereit|1 - 20|"Wartezeit". Ist stark abhängig von AGI-Auslastung|
+|bereit - abgeschlossen|7||
 
-**Wichtig:** Bei hoher Auslastung ruht der Auftrag im Status "bereit"
+**Wichtig:** Bei hoher Auslastung ruht der Auftrag im Status "bereit", 
+bei sehr hoher Auslastung auch schon vor der Erarbeitung des "WIE".
    
 

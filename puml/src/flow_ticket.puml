@@ -1,6 +1,6 @@
 ﻿@startuml
 legend top
-	Ablauf eines Tickets
+	Ablauf eines Tagesgeschäftes
 end legend
 |Mitarbeiter Fachamt|
 start
@@ -13,7 +13,7 @@ verschriftlichen
 |Ticket-Triage|
 :Vollständigkeit
 sicherstellen;
-:bereit}
+
 if (Entwicklung?) then (nein)
   if (Aufwand?) then (> 4h)
     :An SPOC
@@ -27,6 +27,7 @@ if (Entwicklung?) then (nein)
       ...;
       stop
     else (nein)
+      :bereit}
       |AGI-Mitarbeiter|
       :umsetzung}
       :Lösung erarbeiten;
@@ -41,10 +42,11 @@ else (ja)
   :Feedback an
   GIS-Koordinator
   zur Priorisierung;
+  :bereit}
+  :Vergabe der
+  Weiterentwicklung;
   :umsetzung}
-  :Entwickeln und
-  installieren
-  lassen;
+  :Go-Live;
   :abgeschlossen}
   stop
 endif

@@ -2,7 +2,7 @@
 legend top
 	Ablauf eines GIS-Projektes
 end legend
-|AG|
+|AG (Fachamt)|
 start
 :Projekt bei
 IV anmelden;
@@ -11,16 +11,31 @@ IV anmelden;
 SPOC anmelden;
 |SPOC|
 :entwurf}
-|AG|
+
+:Freigabetyp
+"Gesamt-GL" oder
+"GL-Mitglied"
+entscheiden;
+
+|AG (Fachamt)|
 :PMP Kapitel 1
 erarbeiten
 (lassen);
+
+:Freigabe in
+Gesamt-GL
+resp. durch
+GL-Mitglied
+einholen.;
+
 |SPOC|
-:Projekt in
-AL geben zwecks
-Priorisierung
+:Projekt-
+initialisierung
+in AL freigeben
+lassen.
 (Halbjährlich);
-|PL|
+:bereit}
+|PL (AGI)|
 :Init-Meeting
 durchführen;
 :initialisierung}
@@ -31,9 +46,9 @@ erarbeiten;
 bei AG beantragen;
 :Kickoff-Meetings
 durchfüren;
-|AG|
+|AG (Fachamt)|
 :Projekt freigeben;
-|PL|
+|PL (AGI)|
 :konzept}
 :Konzept AP's
 erarbeiten (lassen);
@@ -42,10 +57,10 @@ Realisierung
 erarbeiten;
 :Phasenübergang
 bei AG beantragen;
-|AG|
+|AG (Fachamt)|
 :Realisierung
 freigeben;
-|PL|
+|PL (AGI)|
 :realisierung}
 :Realisierung's AP's
 erarbeiten (lassen);
@@ -54,10 +69,10 @@ Einführung
 erarbeiten;
 :Phasenübergang
 bei AG beantragen;
-|AG|
+|AG (Fachamt)|
 :Einführung
 freigeben;
-|PL|
+|PL (AGI)|
 :einführung}
 :Einführungs's AP's
 erarbeiten (lassen);
@@ -66,10 +81,10 @@ Projektabschluss
 erarbeiten;
 :Projektabschluss
 bei AG beantragen;
-|AG|
+|AG (Fachamt)|
 :Projektabschluss
 bewilligen;
-|PL|
+|PL (AGI)|
 :abgeschlossen}
 end
 @enduml
