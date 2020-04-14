@@ -1,0 +1,45 @@
+@startuml
+legend top
+	Ablauf eines GIS-Projektes
+end legend
+|Initiant|
+start
+:Projekt bei
+IV anmelden;
+|IV / GIS-Koordinator|
+:Projekt bei
+SPOC anmelden;
+|SPOC|
+:entwurf}
+
+:Freigabetyp
+"Gesamt-GL" oder
+"GL-Mitglied"
+entscheiden;
+
+|AG (Fachamt)|
+:PMP Kapitel 1
+erarbeiten
+(lassen);
+
+:Freigabe in
+Gesamt-GL
+resp. durch
+GL-Mitglied
+einholen.;
+
+|SPOC|
+:Projekt-
+initialisierung
+in AL freigeben
+lassen.
+(Halbjährlich);
+:bereit}
+|PL (AGI)|
+:Init-Meeting
+durchführen;
+:initialisierung}
+:PMP für
+Konzeptphase
+erarbeiten;
+@enduml
