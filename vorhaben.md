@@ -13,21 +13,22 @@ Im Rahmen dieses Projektes "docktick" werden die Gemeinsamkeiten und Unterschied
 |Begriff|Klassierung|Bemerkungen|
 |---|---|---|
 |AG|Rolle|Auftraggeber. Verantwortet, dass die Lösung den formulierten Zielen entspricht und Aufwand und Ertrag in gutem Verhältnis stehen. Nimmt das Vorhaben ab. Bei einem Tagesgeschäft ist der Ticketersteller implizit der Auftraggeber.| 
-|AL|Rolle|Amtsleitung des AGI. Berät in strategischen Fragen den Leiter des AGI.|
+|AGI AL|Rolle|Amtsleitung des AGI. Berät in strategischen Fragen den Leiter des AGI.|
 |AP|-|Arbeitspaket. Teilvorhaben innerhalb eines Projektes. Entspricht in der Grösse meist einem Auftrag.|
-|GL|-|Geschäftsleitung. Berät in strategischen Fragen den Amtsleiter.|
+|GL|-|Geschäftsleitung / Amtsleitung. Berät in strategischen Fragen den Amtsleiter eines Fachamtes.|
 |OE|-|Organisationseinheit|
+|IPL|-|Informatik Projektleiter. Rollenbezeichnung des AIO-Projektleiters in einem Projekt mit dem AIO|
 |IV|Rolle|Informatik-Verantwortlicher. Unterstützt AG und PL, insbesondere in der Projektinitialisierung.|
 |KAM|Rolle|Zentrale Ansprechperson des AIO für allen Anliegen eines Amtes bezüglich des AIO.|
 |PA|Rolle|Projekt-Ausschuss. Berät und unterstützt den Auftraggeber bezüglich der Projektsteuerung.|
 |PL|Rolle|Projektleiter. Führt das Projekt im Auftrag des Auftraggebers.| 
-|Phase|-|Dient dem geordneten Fortschreiten in Projekten und Aufträgen. Der Stand des Vorhabens wird bei einem Phasenübergang jeweils im Vieraugenprinzip überprüft.|
+|Phase|-|Dient dem geordneten Fortschreiten in Projekten und Aufträgen. Der Stand des Vorhabens wird bei einem Phasenübergang jeweils im Mehr-Augen-Prinzip überprüft.|
 |PMP|Dokument|Projektmanagement-Plan des AGI. Umfasst die wichtigsten Informationen (Rollen, Phasen, ...) bezüglich der Abwicklung eines Projektes. In den PMP wurden die für ein AGI-Projekt relevanten Hermes-Dokumente in Kapitelform des PMP übernommen.|
-|SPOC|Rolle|**S**ingle **P**oint **O**f **C**ontact. Zentrale Ansprechperson für allen Anliegen eines Amtes bezüglich des AGI.|
+|SPOC|Rolle|**S**ingle **P**oint **O**f **C**ontact. Zentrale Ansprechperson für alle Anliegen eines Amtes bezüglich des AGI.|
 
 ### Details zu Begriffen
  
-* **Auftraggeber (AG):** Bezüglich der Aufwände werden die Gesamtaufwände ausgewiesen (Personell und Finanziell, über alle beteiligten OE's). 
+* **Auftraggeber (AG):** Bezüglich der Aufwände werden die Gesamtaufwände ausgewiesen (Personell und Finanziell, über alle beteiligten Organisationseinheiten). 
 Der AG sorgt für Behandlung des Projektes in der GL. Details zur Rolle nach Hermes [hier](https://www.hermes.admin.ch/de/projektmanagement/verstehen/rollen/auftraggeber.html)
 * **Phasen:** Details siehe [hier](https://www.hermes.admin.ch/de/projektmanagement/verstehen/phasen-und-meilensteine.html)
 * **Projektleiter (PL):** Strukturiert das Projekt und führt das Projektteam. Details siehe [hier](https://www.hermes.admin.ch/de/projektmanagement/verstehen/rollen/projektleiter.html)
