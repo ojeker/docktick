@@ -62,7 +62,7 @@ Ziele:
 
 Abhängig von den Antworten auf diese Fragen muss beim AIO ein Projekt eingestellt werden oder nicht.
 
-**BEACHTEN:** Projekteinstellung muss bis Februar im alten Jahr erfolgen, damit das Kickoff im neuen Jahr stattfinden kann.
+**Zu beachten:** Projekteinstellung muss bis Februar im alten Jahr erfolgen, damit das Kickoff im neuen Jahr stattfinden kann.
 Bei angespannter AIO-Ressourcenlage kann sogar das Init-Meeting erst im neuen Jahr stattfinden.
 
   
