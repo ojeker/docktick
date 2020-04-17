@@ -53,7 +53,7 @@ Warte-Gründe:
 
 ### Status Mapping pro Vorhabenstyp
 
-Leidiglich Projekte benötigen die folgend beschriebene Ausdetaillierung der übergeordneten Status.
+Projekte und Tagesgeschäft benötigen die folgend beschriebene Ausdetaillierung der übergeordneten Status.
 
 |Vorhabenstyp|Status|Detail-Status des Vorhabenstyps|
 |---|---|---|
@@ -61,6 +61,12 @@ Leidiglich Projekte benötigen die folgend beschriebene Ausdetaillierung der üb
 |Projekt|Bereit|Bereit|
 |Projekt|Umsetzung|Initialisierung, Konzept, Realisierung, Einführung|
 |Projekt|Abgeschlossen|Abgeschlossen|
+|-|-|-|
+|Tagesgeschäft|Entwurf|Entwurf|
+|Tagesgeschäft|Bereit|Bereit|
+|Tagesgeschäft|Umsetzung|Realisierung, Rollout-Ready|
+|Tagesgeschäft|Abgeschlossen|Abgeschlossen|
+
 
 ## Links auf die Ablaufdiagramme
 

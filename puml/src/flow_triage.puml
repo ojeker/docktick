@@ -1,0 +1,41 @@
+﻿@startuml
+|Mitarbeiter Fachamt|
+start
+:Feststellung
+verschriftlichen
+(lassen);
+|GIS-Koordinator|
+:Ticket eröffnen;
+:entwurf}
+|Ticket-Triage|
+if (Geodaten
+bezogen?) then (nein)
+  if (FE-bezogen?) then (ja)
+    :An Anwendungs-
+    Verantwortlichen
+    übergeben;
+    stop
+  else (nein)
+    :An GDI-
+    Koordinator
+    übergeben;
+    stop
+  endif
+else (ja)
+  :mit SPOC
+  besprechen;
+  if (bleibt Tages-
+  geschäft?) then (ja)
+    :bereit}
+    :An AGI-
+    Mitarbeiter
+    übergeben;
+    stop
+  else (nein)
+    |Ticket-Triage|
+  	:An SPOC
+    übergeben;
+    stop
+  endif
+endif
+@enduml

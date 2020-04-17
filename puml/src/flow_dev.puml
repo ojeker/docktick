@@ -1,0 +1,33 @@
+﻿@startuml
+|Anw. Verantwortlicher|
+start
+:prorisieren und
+terminieren;
+:Feedback an
+Ticket-Ersteller
+zur Priorisierung;
+:bereit}
+:Weiterentwicklung
+beauftragen;
+|Entwickler|
+:umsetzung}
+:Resultat intern
+testen (lassen);
+:rollout-ready}
+if(manuelles
+Go-Live?) then (ja)
+    |Anw. Verantwortlicher|
+    :mit Betrieb
+    Go-Live
+    besprechen;
+    |GDI-Betrieb|
+    :Go-Live
+    durchführen;
+else (nein)
+endif
+|Anw. Verantwortlicher|
+:Abnehmen
+(lassen);
+:abgeschlossen}
+end
+@enduml
