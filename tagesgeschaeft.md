@@ -34,6 +34,8 @@ FE = Funktionale Einheit.
 
 * Zutreffend (Ja), falls sich die Anfrage auf eine einzige funktionale Einheit bezieht.
 * Nicht zutreffend (Nein), falls sich die Anfrage auf keine oder mehrere funktionale Einheiten bezieht.
+Bei Betroffenheit mehrerer funktionaler Einheiten organisiert der GDI-Koordinator eine Besprechung mit
+den betroffenen Anwendungsverantwortlichen zwecks Projekt-Initialisierung.
 
 ### Entscheid "bleibt Tagesgeschäft?"
 
@@ -104,8 +106,7 @@ Am effizientesten ist es, wenn der Bearbeiter dies gleich selber erledigt. Wem d
 bittet einen Arbeitskollegen zu testen.
 
 **Wichtig:** Die Verantwortung, dass gut und zeitnah getestet und abgeschlossen wird, bleibt beim Bearbeiter.
-Das Ticket wird **nicht** an den Tester übergeben. So eignet sich beispielsweise die Kaffeepause, um jemanden 
-um Erledigung des "testing" bis spätestens Feierabend zu bitten.
+Das Ticket wird **nicht** an den Tester übergeben.
 
 ### Schritt "Layer-Rollout abwarten ..."
 

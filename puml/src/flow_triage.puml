@@ -1,7 +1,4 @@
 ﻿@startuml
-legend top
-	Ablauf eines Tagesgeschäftes
-end legend
 |Mitarbeiter Fachamt|
 start
 :Feststellung

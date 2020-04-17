@@ -1,7 +1,4 @@
 @startuml
-legend top
-	Ablauf eines Rollout-Tickets
-end legend
 |AGI-Mitarbeiter|
 
 :umsetzung}
