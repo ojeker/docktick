@@ -20,6 +20,7 @@ if (DDL?) then (nein)
   :abgeschlossen}
   stop
 else (ja)
+  :DDL erarbeiten;
   :DDL durch Admin
   auf Integration
   ausführen lassen;
@@ -33,7 +34,7 @@ umsetzen;
 prüfen (lassen);
 :Anpassung durch
 Ticket-Ersteller
-abnehmen (lassen);
+abnehmen lassen;
 :rollout-ready}
 
 :Layer-Rollout

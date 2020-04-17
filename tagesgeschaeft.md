@@ -1,10 +1,17 @@
 # Tagesgeschäft
 
-Ein Vorhaben der Schuhgrösse "Tagesgeschäft" kann sowohl AGI-Intern wie von den Fachämtern, vom AIO kommen.
+Ein Vorhaben der Schuhgrösse "Tagesgeschäft" kann seinen Ursprung AGI-Intern, in den Fachämtern oder im AIO haben.
+
+In jedem Fall ist wichtig, gleich am Anfang die Schuhgrösse zu Hinterfragen, und ein Auftrag oder Projekt zu wählen,
+wenn es die vom Vorhaben ausgelöste Komplexität und oder der ausgelöste Arbeitsaufwand erfordert.
+
+Die Verantwortung für die Wahl der passenden Schuhgrösse liegt bei demjenigen, welcher den Status eines Vorhabens
+von "Entwurf" auf "Bereit" setzt.
 
 ## Basisablauf bei AGI-internem Ticket-Ersteller
 
-Falls keinem Rollout zugwiesen, wird die Arbeit mittels "Tagesgeschäfts-Ticket" abgewickelt.
+Falls keinem Rollout zugewiesen und von überschaubarer Komplexität und Umfang, 
+wird die Arbeit mittels "Tagesgeschäfts-Ticket" abgewickelt.
 
 ![Tagesgeschäft](puml_output/flow_ticket.png)
 
@@ -75,7 +82,7 @@ Dies ist ein wichtiger Schritt, um den stressfreien Erfolg der Änderung sicherz
 * Wann muss ich es spätestens dem Ticket-Ersteller vorlegen, damit es auch mit allfälligen
 Korrekturen noch in den Rollout passt?
 
-### Entscheidung DDL?
+### Entscheidung "DDL?"
 
 Falls die Anpassung Modelländerungen und oder Berechtigungsänderungen umfasst,
 müssen diese an einen Admin zur Durchführung auf der Integration übergeben werden.
@@ -91,18 +98,16 @@ werden.
 
 ### Schritt "DDL durch Admin auf Integration ausführen lassen"
 
-Dazu ein Kindticket erstellen und einem Admin zuweisen.
+Dazu ein Kindticket erstellen und einem Admin zuweisen. 
 
-Häufig kann der "Löwenanteil" der Arbeit erst angegangen werden, nachdem die Integration gemäss
-aktuellem Modell vorliegt. Die DDL-Ausführung muss also zeitnah erfolgen können, insbesondere wenn es 
-sich beispielsweise "nur" um eine Attributerweiterung handelt.
-Darum Fallabhängig zusätzlich **mündlich** bei Kaffee / Mittagspause, ... einen Admin bitten, 
-das DDL bis am Abend auszuführen. 
+Das Hauptticket, und damit **die Verantwortung** bezüglich des 
+termingerechte Abschluss aller notwendigen Arbeiten **bleibt beim AGI-Mitarbeiter**. Dieser muss im Schritt "Arbeit planen"
+ein entsprechendes Zeitfenster für das Ausführen der DDL's auf der Integration einplanen. 
 
 ### Schritt "Anpassung intern prüfen (lassen)"
 
 Eine im AGI erstellte Anpassung / Lösung muss in jedem Fall zuerst AGI-intern sauber getestet werden.
-Am effizientesten ist es, wenn der Bearbeiter dies gleich selber erledigt. Wem dies nicht möglich erscheint 
+Am effizientesten ist es, wenn der Bearbeiter dies gleich selber erledigt. Wem dies nicht möglich erscheint, 
 bittet einen Arbeitskollegen zu testen.
 
 **Wichtig:** Die Verantwortung, dass gut und zeitnah getestet und abgeschlossen wird, bleibt beim Bearbeiter.
