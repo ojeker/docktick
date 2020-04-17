@@ -1,53 +1,33 @@
 ﻿@startuml
-legend top
-	Ablauf eines Tagesgeschäftes
-end legend
-|Mitarbeiter Fachamt|
+|Anw. Verantwortlicher|
 start
-:Feststellung
-verschriftlichen
-(lassen);
-|GIS-Koordinator|
-:Ticket eröffnen;
-:entwurf}
-|Ticket-Triage|
-:Vollständigkeit
-sicherstellen;
-
-if (Entwicklung?) then (nein)
-  if (Aufwand?) then (> 4h)
-    :An SPOC
-    weiterleiten;
-    stop
-  else (< 4h)
-  	if (Rollout?) then (ja)
-      :...
-      siehe Rollout
-      Ablauf
-      ...;
-      stop
-    else (nein)
-      :bereit}
-      |AGI-Mitarbeiter|
-      :umsetzung}
-      :Lösung erarbeiten;
-      :abgeschlossen}
-      stop
-    endif
-  endif
-else (ja)
-  |Anw. Verantwortlicher|
-  :prorisieren und
-  terminieren;
-  :Feedback an
-  GIS-Koordinator
-  zur Priorisierung;
-  :bereit}
-  :Vergabe der
-  Weiterentwicklung;
-  :umsetzung}
-  :Go-Live;
-  :abgeschlossen}
-  stop
+:prorisieren und
+terminieren;
+:Feedback an
+Ticket-Ersteller
+zur Priorisierung;
+:bereit}
+:Weiterentwicklung
+beauftragen;
+|Entwickler|
+:umsetzung}
+:Resultat intern
+testen (lassen);
+:rollout-ready}
+if(manuelles
+Go-Live?) then (ja)
+    |Anw. Verantwortlicher|
+    :mit Betrieb
+    Go-Live
+    besprechen;
+    |GDI-Betrieb|
+    :Go-Live
+    durchführen;
+else (nein)
 endif
+|Anw. Verantwortlicher|
+:Abnehmen
+(lassen);
+:abgeschlossen}
+end
 @enduml

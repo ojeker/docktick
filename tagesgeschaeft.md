@@ -1,6 +1,45 @@
 # Tagesgeschäft
 
+Ein Vorhaben der Schuhgrösse "Tagesgeschäft" kann sowohl AGI-Intern wie von den Fachämtern, vom AIO kommen.
+
+## Basisablauf bei AGI-internem Ticket-Ersteller
+
+Falls keinem Rollout zugwiesen, wird die Arbeit mittels "Tagesgeschäfts-Ticket" abgewickelt.
+
 ![Tagesgeschäft](puml_output/flow_ticket.png)
+
+## Ticket-Triage
+
+Anfragen von Fachstellen können unterschiedlichste Arbeiten auslösen. Mittels Ticket-Triage werden die Tickets
+klassiert und auf den richtigen Weg geschickt.
+
+![Triage](puml_output/flow_triage.png)
+
+## Bemerkungen zu einzelnen Schritten
+
+### Entscheid "Geodaten-bezogen?"
+
+Geodaten-bezogen bedeutet, dass entweder eine Anpassung der Ausgabe der Geodaten gewünscht ist, oder
+eine Anpassung an den Geodaten selbst. Die Anpassung der Ausgabe bezieht sich häufig auf die Konfiguration 
+im Web GIS Client, eine Anpassung der Geodaten bedingt häufig eine Modelländerung.
+
+Nicht "Geodaten-bezogen" sind beispielsweise:
+* Bug's einer funktionalen Einheit
+* Weiterentwicklungswünsche bezüglich einer funktionalen Einheit
+* Konfigurationsanpassungen an Komponenten der funktionalen Einheit
+
+### Entscheid "FE-bezogen?"
+
+FE = Funktionale Einheit.
+
+* Zutreffend (Ja), falls sich die Anfrage auf eine einzige funktionale Einheit bezieht.
+* Nicht zutreffend (Nein), falls sich die Anfrage auf keine oder mehrere funktionale Einheiten bezieht.
+
+### Entscheid "bleibt Tagesgeschäft?"
+
+Wird in der Besprechung mit dem SPOC ermittelt. Wichtige, aber nicht einzige Entscheidungskriterien:
+* Wie hoch ist der Umsetzungsaufwand?
+* Ist die Anfrage etwas "bekanntes", was schon mehrere Male gemacht wurde, oder etwas neues?
 
 ## SOLL-Durchlaufzeiten
 
@@ -25,14 +64,50 @@ Tickets aufgeführt, welche weder einem Release noch einem Rollout zugewiesen si
 ### Schritt "Arbeiten planen"
 
 Dies ist ein wichtiger Schritt, um den stressfreien Erfolg der Änderung sicherzustellen. Wichtige Fragen in der Planung:
-* SPOC informieren, falls die Änderung viel Aufwand auslöst und mir der fachliche
-Nutzen nicht klar ist.
 * Gibt es strukturelle Anpassungen?
     * DDL?
     * Anpassungen an Codelisten?
 * Welche Daten und Applikationen sind vom Datensatz abhängig?
     * Werden sie von der Änderung betroffen sein?
-* Wer erarbeitet mir das DDL? Bis wann muss dieses stehen?
 * In welchen Rollout "möchte ich rein"?
-* Wann muss ich es spätestens dem SPOC vorlegen, damit es auch mit allfälligen
+* Wann muss ich es spätestens dem Ticket-Ersteller vorlegen, damit es auch mit allfälligen
 Korrekturen noch in den Rollout passt?
+
+### Entscheidung DDL?
+
+Falls die Anpassung Modelländerungen und oder Berechtigungsänderungen umfasst,
+müssen diese an einen Admin zur Durchführung auf der Integration übergeben werden.
+Zusätzlich muss sichergestellt werden, dass im Layer-Rollout auf der Prod
+dasselbe Skript nochmals durchgeführt wird.
+
+Änderungen ohne DDL können einfach und selbstständig durchgeführt 
+und abgeschlossen werden.
+
+Änderungen mit DDL brauchen mehr Aufmerksamkeit. Im Gegensatz zu den 
+"Nicht-DDL"-Änderungen müssen diese nach dem "Go-Live" erneut geprüft 
+werden.
+
+### Schritt "DDL durch Admin auf Integration ausführen lassen"
+
+Dazu ein Kindticket erstellen und einem Admin zuweisen.
+
+Häufig kann der "Löwenanteil" der Arbeit erst angegangen werden, nachdem die Integration gemäss
+aktuellem Modell vorliegt. Die DDL-Ausführung muss also zeitnah erfolgen können, insbesondere wenn es 
+sich beispielsweise "nur" um eine Attributerweiterung handelt.
+Darum Fallabhängig zusätzlich **mündlich** bei Kaffee / Mittagspause, ... einen Admin bitten, 
+das DDL bis am Abend auszuführen. 
+
+### Schritt "Anpassung intern prüfen (lassen)"
+
+Eine im AGI erstellte Anpassung / Lösung muss in jedem Fall zuerst AGI-intern sauber getestet werden.
+Am effizientesten ist es, wenn der Bearbeiter dies gleich selber erledigt. Wem dies nicht möglich erscheint 
+bittet einen Arbeitskollegen zu testen.
+
+**Wichtig:** Die Verantwortung, dass gut und zeitnah getestet und abgeschlossen wird, bleibt beim Bearbeiter.
+Das Ticket wird **nicht** an den Tester übergeben. So eignet sich beispielsweise die Kaffeepause, um jemanden 
+um Erledigung des "testing" bis spätestens Feierabend zu bitten.
+
+### Schritt "Layer-Rollout abwarten ..."
+
+Das Ticket bleibt beim bearbeitenden Mitarbeiter. Nachdem der Layer-Rollout durchgeführt wurde, erfolgt 
+die Endkontrolle auf der Produktion.

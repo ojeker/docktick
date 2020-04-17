@@ -2,11 +2,6 @@
 legend top
 	Ablauf eines Rollout-Tickets
 end legend
-|Ticket-Triage|
-start
-:Verantwortlichen
-bestimmen;
-:bereit}
 |AGI-Mitarbeiter|
 
 :umsetzung}
@@ -14,39 +9,41 @@ bestimmen;
 :Arbeiten
 planen;
 
-if (DDL?) then (nein)
-
-else (ja)
-
-:Betrieb mit
-DDL-Kindticket
-beauftragen;
-
-|AGI-Betrieb|
-
-:DDL
-erarbeiten;
-
-endif
-
-|AGI-Mitarbeiter|
-
-:Nicht-DDL
-Änderungen
-erarbeiten;
-
-:Anpassungen
-von SPOC
-bestätigen
-lassen;
-
 :zu Rollout
 zuweisen;
 
-|AGI-Betrieb|
-:Layer-Rollout
-durchführen;
+if (DDL?) then (nein)
+  :Änderungen
+  umsetzen;
+  :Anpassung intern
+  prüfen (lassen);
+  :Anpassung durch
+  Ticket-Ersteller
+  abnehmen (lassen);
+  :abgeschlossen}
+  stop
+else (ja)
+  :DDL durch Admin
+  auf Integration
+  ausführen lassen;
 
+endif
+
+:Änderungen
+umsetzen;
+
+:Anpassung intern
+prüfen (lassen);
+:Anpassung durch
+Ticket-Ersteller
+abnehmen (lassen);
+:rollout-ready}
+
+:Layer-Rollout
+abwarten ...;
+
+:Auf Prod
+prüfen;
 :abgeschlossen}
 
 end
