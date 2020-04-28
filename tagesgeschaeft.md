@@ -64,7 +64,7 @@ Tickets aufgeführt, welche weder einem Release noch einem Rollout zugewiesen si
 
 **Wichtig:** Bei hoher Auslastung ruht das Ticket im Status "bereit"
 
-# Rollout-Ticket
+# Ablauf für Layer-Rollout-Ticket
 
 ![Rollout-Ticket](puml_output/flow_rollout.png)
 
