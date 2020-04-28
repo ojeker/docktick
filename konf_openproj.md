@@ -4,7 +4,7 @@ Ziel der Konfiguration ist, ein gutes Verhältnis zwischen der Komplexität der 
 Nutzbarkeit von Openproject zu erreichen.
 Ein Nice-To-Have Feature mit einer massiv komplizierten Konfiguration zu erkaufen ist also beispielsweise nicht die Idee.
 
-Die Konfiugurationsmöglichkeiten in OpenProject sind umfangreich. Die "richtige" Konfiguration für unsere Bedürfnisse
+Die Konfigurationsmöglichkeiten in OpenProject sind umfangreich. Die "richtige" Konfiguration für unsere Bedürfnisse
 zu finden entsprechend anspruchsvoll. Insbesondere zu beachten ist der "Scope" einer Konfiguration.
 
 Scope (Wirkungsbereich) einer Konfiguration:
@@ -22,13 +22,16 @@ gleich gelagerte Arbeitstypen. Wir erstellen also nicht pro SOGIS-Projekt ein Op
     * "Work package status:" Fortschrittszustand eines Work package. Für ein Projekt beispielsweise "Realisierung".
 * **"Workflow":** Konfiguration der möglichen Statusübergänge für ein work package type. 
 
-## Projektbaum
+## Openproject-Projektbaum
 
-Um eine Übersicht aller Vorhaben zu gewährleisten, sind alle Projekte Kinder des "Root-Projektes" SOGIS. Die funktionalen
+Um eine Übersicht aller Vorhaben zu gewährleisten, sind alle Projekte Kinder des **"Root-Projektes" SOGIS**. Die funktionalen
 Einheiten werden als Kindprojekte abgebildet.
 
 Kind-Projekte:
-* **Vorhaben:** Beinhaltet alle Projekte, Arbeitspakete und Tagesgeschäfte, die im und mit dem AGI "laufen". 
+* **Vorhaben:** Beinhaltet alle Projekte, Arbeitspakete und Tagesgeschäfte, die im und mit dem AGI "laufen".
+    * Riesenprojekt X  
+    * _Templates: Umfasst Vorlagen, welche als "Quick Start" für das Erstellen von neuen Projekten und Arbeitspaketen
+genutzt werden. 
 * **Funktionale Einheiten:** Beinhaltet alle Issues, welche bezüglich Betrieb und Weiterentwicklung der funktionalen
 Einheit offen sind.
     * WGC
@@ -42,8 +45,7 @@ Einheit offen sind.
     * ILI-Validator
     * Avgbs2Mtab
     * ...?
-* **_Templates:** Umfasst Vorlagen, welche als "Quick Start" für das Erstellen von neuen Projekten und Arbeitspaketen
-genutzt werden. 
+
     
 Die Layer-Rollouts sind Teil des SOGIS-Projektes.
 
@@ -77,3 +79,8 @@ Fragestellung gelöst werden kann.
 |---|---|
 |Ab wann hat die Projekt-Verschachtelungstiefe einen negativen Einfluss auf die Performance?||
 |Tickets in Rollout einer FE einem Projekt zuweisen?||  
+|Tagesgeschäft in Vorhaben dem Layer-Rollout zuweisen?||
+|Mit Docker starten, um die Konfiguration hinzubekommen, und dann migrieren?||
+|Starten ohne das Laden der Beispielkonfiguration (demo data)||
+|Auth: Anbinden mehrerer LDAP-Verzeichnisse||
+|Auth: Mischung von z.B. LDAP (interne Benutzer) mit "default Auth" für externe Benutzer||
