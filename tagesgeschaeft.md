@@ -76,6 +76,7 @@ Dies ist ein wichtiger Schritt, um den stressfreien Erfolg der Änderung sicherz
 * Gibt es strukturelle Anpassungen?
     * DDL?
     * Anpassungen an Codelisten?
+* Müssen Berechtigungen auf DB / in AGDI gesetzt oder geändert werden?
 * Welche Daten und Applikationen sind vom Datensatz abhängig?
     * Werden sie von der Änderung betroffen sein?
 * In welchen Rollout "möchte ich rein"?
