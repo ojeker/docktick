@@ -64,7 +64,7 @@ Tickets aufgeführt, welche weder einem Release noch einem Rollout zugewiesen si
 
 **Wichtig:** Bei hoher Auslastung ruht das Ticket im Status "bereit"
 
-# Rollout-Ticket
+# Ablauf für Layer-Rollout-Ticket
 
 ![Rollout-Ticket](puml_output/flow_rollout.png)
 
@@ -76,6 +76,7 @@ Dies ist ein wichtiger Schritt, um den stressfreien Erfolg der Änderung sicherz
 * Gibt es strukturelle Anpassungen?
     * DDL?
     * Anpassungen an Codelisten?
+* Müssen Berechtigungen auf DB / in AGDI gesetzt oder geändert werden?
 * Welche Daten und Applikationen sind vom Datensatz abhängig?
     * Werden sie von der Änderung betroffen sein?
 * In welchen Rollout "möchte ich rein"?
