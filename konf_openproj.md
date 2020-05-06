@@ -45,7 +45,6 @@ Einheit offen sind.
     * ILI-Validator
     * Avgbs2Mtab
     * ...?
-
     
 Die Layer-Rollouts sind Teil des SOGIS-Projektes.
 
@@ -75,12 +74,42 @@ Fragestellung gelöst werden kann.
 
 ## Fragen
 
-|Frage|Antwort|
-|---|---|
-|Ab wann hat die Projekt-Verschachtelungstiefe einen negativen Einfluss auf die Performance?||
-|Tickets in Rollout einer FE einem Projekt zuweisen?||  
-|Tagesgeschäft in Vorhaben dem Layer-Rollout zuweisen?||
-|Mit Docker starten, um die Konfiguration hinzubekommen, und dann migrieren?||
-|Starten ohne das Laden der Beispielkonfiguration (demo data)||
-|Auth: Anbinden mehrerer LDAP-Verzeichnisse||
-|Auth: Mischung von z.B. LDAP (interne Benutzer) mit "default Auth" für externe Benutzer||
+Benutzte Abkürzungen:
+* FE: Funktionale Einheit
+* OPP: OpenProject-Projekt
+
+|Nr|Frage|Antwort|Typ|Done|
+|---:|---|---|---|---|
+|1|Ab wann hat die Projekt-Verschachtelungstiefe einen negativen Einfluss auf die Performance?|Verschachtelungstiefe von 3 ist kein Problem. Bei tieferer Verschachtelung abhängig von der Anzahl der Issues|Tech|Ja|
+|2|Tickets in Version einer FE einem Abwicklungs-Projekt zuweisen? Ticket ist gleichzeitig in mehreren OPP relevant.|Ticket kann zu 0-1 Version zugewiesen werden (nicht n). --> Geeignete Konfig muss besprochen werden|Fach|Nein|  
+|3|Tagesgeschäft in Vorhaben dem Layer-Rollout zuweisen?|Kein Problem. Layer-Rollout ist Version des Root-OPP "SOGIS" Der Version können Tickets aller Kind-OPP zugewiesen werden|Fach|Ja|
+|4|Mit Docker starten, um die Konfiguration hinzubekommen, und dann migrieren?|Kein Problem, solange von genau einer Quell-Instanz migriert wird|Tech|Ja|
+|5|Starten ohne das Laden der Beispielkonfiguration (demo data)|Kein Problem. Docker compose anpassen und anschliessend mittels Rails-Console Admin-Benutzer anlegen|Tech|Ja|
+|6|Auth: Anbinden mehrerer LDAP-Verzeichnisse|Ja, geht. In OP-Benutzerverzeichnis ist vermerkt, auf welchem LDAP der Benutzer definiert ist.|Tech|Ja|
+|7|Auth: Mischung von z.B. LDAP (interne Benutzer) mit "default Auth" für externe Benutzer|Ja, geht auch.|Tech|Ja|
+|8|Auth: Auto-Login mit bestehendem Cookie|Ja, geht. Verfall des Cookies kann sowohl absolut "X Stunden nach dem Login" wie "nach X Stunden Inaktivität" konfiguriert werden.|Tech|Ja|
+
+### Starten ohne das Laden der Beispielkonfiguration (demo data)
+
+E-Mail vom 6. Mai 2020:
+
+Anbei wie versprochen der Befehl zum Entfernen von Seed Daten aus der Instanz. In der produktiven Docker-Umgebung werden 
+die Seeds im Service `seeder` aufgerufen. Wenn sie die "One container per process" Anleitung gefolgt haben, können Sie 
+einfach die docker-compose.yml den Eintrag "seeder:" in Zeile 84-89 auskommentieren und dann einen neuen container 
+damit starten.
+
+Danach müssten Sie einen Adminnutzer anlegen:
+
+1. Die Container ID finden über `docker ps | grep web | cut -d ' ' -f 1`
+2. Eine Shell im Container spawnen über `docker exec -it <ID> bash`
+3. In der Shell eine Rails Console starten über `RAILS_ENV=production bundle exec rails console`
+
+In dieser Rails Console können Sie einen Nutzer anlegen mit `AdminUserSeeder.new.seed!`, der dann die Zugangsdaten admin / admin erhält.
+
+Alternativ können Sie auch über die Konsole Daten entfernen, wenn Sie den Container nicht neustarten. Dazu folgen Sie die drei Schritte oben, und führen dann aus:
+* Um alle Projekte zu löschen: Project.destroy_all
+* Um alle Typen zu löschen: Type.destroy_all
+* Um alle Status zu löschen: Status.destroy_all
+* Um alle Prioritäten und Auflistungen zu löschen: Enumeration.destroy_all
+
+Hier können Sie wahlweise Konfigurationen übrig lassen. Das Löschen der Projekte löscht auch alle darin enthaltenen Module, Arbeitspakete, usw.
