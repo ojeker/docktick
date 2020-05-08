@@ -72,7 +72,7 @@ Fragestellung gelöst werden kann.
 |Tagesgeschäft|X|X|X|
 |Issue|X|-|X|
 
-## Fragen
+## Fragen für OpenProject-Beratung
 
 Benutzte Abkürzungen:
 * FE: Funktionale Einheit
@@ -88,6 +88,9 @@ Benutzte Abkürzungen:
 |6|Auth: Anbinden mehrerer LDAP-Verzeichnisse|Ja, geht. In OP-Benutzerverzeichnis ist vermerkt, auf welchem LDAP der Benutzer definiert ist.|Tech|Ja|
 |7|Auth: Mischung von z.B. LDAP (interne Benutzer) mit "default Auth" für externe Benutzer|Ja, geht auch.|Tech|Ja|
 |8|Auth: Auto-Login mit bestehendem Cookie|Ja, geht. Verfall des Cookies kann sowohl absolut "X Stunden nach dem Login" wie "nach X Stunden Inaktivität" konfiguriert werden.|Tech|Ja|
+|9|Scoping bezüglich der Versionen verstehen "Gemeinsame Verwendung": Projektbaum, Projekthierarchie, ...|?|Fach|Nein|
+|10|Konfiguration von Backlog verstehen|?|Fach|Nein|
+|11|Wieso kommen beim Rollout-Geschäft ungewünschte Status?|?|Fach|Nein|
 
 ### Starten ohne das Laden der Beispielkonfiguration (demo data)
 
@@ -113,3 +116,9 @@ Alternativ können Sie auch über die Konsole Daten entfernen, wenn Sie den Cont
 * Um alle Prioritäten und Auflistungen zu löschen: Enumeration.destroy_all
 
 Hier können Sie wahlweise Konfigurationen übrig lassen. Das Löschen der Projekte löscht auch alle darin enthaltenen Module, Arbeitspakete, usw.
+
+## Interne Fragen
+
+|Nr|Frage|Antwort|Done|
+|---:|---|---|---|
+|1|Layer Rollout Name: Eher a la 2020/1, damit nicht weit im Voraus terminiert werden muss|?|N|
