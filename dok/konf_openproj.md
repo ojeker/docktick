@@ -89,7 +89,7 @@ Benutzte Abkürzungen:
 |7|Auth: Mischung von z.B. LDAP (interne Benutzer) mit "default Auth" für externe Benutzer|Ja, geht auch.|Tech|Ja|
 |8|Auth: Auto-Login mit bestehendem Cookie|Ja, geht. Verfall des Cookies kann sowohl absolut "X Stunden nach dem Login" wie "nach X Stunden Inaktivität" konfiguriert werden.|Tech|Ja|
 |9|Scoping bezüglich der Versionen verstehen "Gemeinsame Verwendung": Projektbaum, Projekthierarchie, ...|?|Fach|Nein|
-|10|Konfiguration von Backlog verstehen|?|Fach|Nein|
+|10|Funktioniert das Backlog auch mit eigenen Task-Typen?|?|Fach|Nein|
 |11|Wieso kommen beim Rollout-Geschäft ungewünschte Status?|?|Fach|Nein|
 
 ### Starten ohne das Laden der Beispielkonfiguration (demo data)
