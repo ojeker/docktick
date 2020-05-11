@@ -91,6 +91,7 @@ Benutzte Abkürzungen:
 |9|Scoping bezüglich der Versionen verstehen "Gemeinsame Verwendung": Projektbaum, Projekthierarchie, ...|?|Fach|Nein|
 |10|Funktioniert das Backlog auch mit eigenen Task-Typen?|?|Fach|Nein|
 |11|Wieso kommen beim Rollout-Geschäft ungewünschte Status?|?|Fach|Nein|
+|12|Feedback zu den zentralen "Pfeilern" der Konfiguration:<br/>- Abbildung der Projekte als "work package"<br/>- Strukturierung der "work packages" in Kindprojekten. Tabellarische Ansichten auf "alles" im Mutterprojekt.|?|Fach|Nein|
 
 ### Starten ohne das Laden der Beispielkonfiguration (demo data)
 
