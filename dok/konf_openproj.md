@@ -24,10 +24,13 @@ gleich gelagerte Arbeitstypen. Wir erstellen also nicht pro SOGIS-Projekt ein Op
 
 ## Openproject-Projektbaum
 
-Um eine Übersicht aller Vorhaben zu gewährleisten, sind alle Projekte Kinder des **"Root-Projektes" SOGIS**. Die funktionalen
-Einheiten werden als Kindprojekte abgebildet.
+Um eine Übersicht aller Vorhaben zu gewährleisten, sind alle Projekte Kinder des **"Root-Projektes" SOGIS**. 
+Im Root-Projekt sind die Versionen der Geodaten-Konfigurationen enthalten, da die Work-Items aus mehreren 
+Kindprojekten stammen können.
 
 Kind-Projekte:
+* **AGI-Posteingang**: Enthält die neu eingegangenen und noch nicht triagierten Tickets.
+* **Konfiguration Geodaten:** Enthält die "für sich stehenden" Tagesgeschäfte mit Bezug zur Geodaten-Konfiguration.
 * **Vorhaben:** Beinhaltet alle Projekte, Arbeitspakete und Tagesgeschäfte, die im und mit dem AGI "laufen".
     * Riesenprojekt X  
     * _Templates: Umfasst Vorlagen, welche als "Quick Start" für das Erstellen von neuen Projekten und Arbeitspaketen
@@ -78,19 +81,21 @@ Benutzte Abkürzungen:
 * FE: Funktionale Einheit
 * OPP: OpenProject-Projekt
 
-|Nr|Frage|Antwort|Typ|Done|
+|Nr|Frage|Antwort|Typ|Donedate|
 |---:|---|---|---|---|
-|1|Ab wann hat die Projekt-Verschachtelungstiefe einen negativen Einfluss auf die Performance?|Verschachtelungstiefe von 3 ist kein Problem. Bei tieferer Verschachtelung abhängig von der Anzahl der Issues|Tech|Ja|
-|2|Tickets in Version einer FE einem Abwicklungs-Projekt zuweisen? Ticket ist gleichzeitig in mehreren OPP relevant.|Ticket kann zu 0-1 Version zugewiesen werden (nicht n). --> Geeignete Konfig muss besprochen werden|Fach|Nein|  
-|3|Tagesgeschäft in Vorhaben dem Layer-Rollout zuweisen?|Kein Problem. Layer-Rollout ist Version des Root-OPP "SOGIS" Der Version können Tickets aller Kind-OPP zugewiesen werden|Fach|Ja|
-|4|Mit Docker starten, um die Konfiguration hinzubekommen, und dann migrieren?|Kein Problem, solange von genau einer Quell-Instanz migriert wird|Tech|Ja|
-|5|Starten ohne das Laden der Beispielkonfiguration (demo data)|Kein Problem. Docker compose anpassen und anschliessend mittels Rails-Console Admin-Benutzer anlegen|Tech|Ja|
-|6|Auth: Anbinden mehrerer LDAP-Verzeichnisse|Ja, geht. In OP-Benutzerverzeichnis ist vermerkt, auf welchem LDAP der Benutzer definiert ist.|Tech|Ja|
-|7|Auth: Mischung von z.B. LDAP (interne Benutzer) mit "default Auth" für externe Benutzer|Ja, geht auch.|Tech|Ja|
-|8|Auth: Auto-Login mit bestehendem Cookie|Ja, geht. Verfall des Cookies kann sowohl absolut "X Stunden nach dem Login" wie "nach X Stunden Inaktivität" konfiguriert werden.|Tech|Ja|
-|9|Scoping bezüglich der Versionen verstehen "Gemeinsame Verwendung": Projektbaum, Projekthierarchie, ...|?|Fach|Nein|
-|10|Konfiguration von Backlog verstehen|?|Fach|Nein|
-|11|Wieso kommen beim Rollout-Geschäft ungewünschte Status?|?|Fach|Nein|
+|1|Ab wann hat die Projekt-Verschachtelungstiefe einen negativen Einfluss auf die Performance?|Verschachtelungstiefe von 3 ist kein Problem. Bei tieferer Verschachtelung abhängig von der Anzahl der Issues|Tech|06.05.2020|
+|2|Tickets in Version einer FE einem Abwicklungs-Projekt zuweisen? Ticket ist gleichzeitig in mehreren OPP relevant.|Ticket kann zu 0-1 Version zugewiesen werden (nicht n). --> Geeignete Konfig muss besprochen werden|Fach|-|  
+|3|Tagesgeschäft in Vorhaben dem Layer-Rollout zuweisen?|Kein Problem. Layer-Rollout ist Version des Root-OPP "SOGIS" Der Version können Tickets aller Kind-OPP zugewiesen werden|Fach|06.05.2020|
+|4|Mit Docker starten, um die Konfiguration hinzubekommen, und dann migrieren?|Kein Problem, solange von genau einer Quell-Instanz migriert wird|Tech|06.05.2020|
+|5|Starten ohne das Laden der Beispielkonfiguration (demo data)|Kein Problem. Docker compose anpassen und anschliessend mittels Rails-Console Admin-Benutzer anlegen|Tech|06.05.2020|
+|6|Auth: Anbinden mehrerer LDAP-Verzeichnisse|Ja, geht. In OP-Benutzerverzeichnis ist vermerkt, auf welchem LDAP der Benutzer definiert ist.|Tech|06.05.2020|
+|7|Auth: Mischung von z.B. LDAP (interne Benutzer) mit "default Auth" für externe Benutzer|Ja, geht auch.|Tech|06.05.2020|
+|8|Auth: Auto-Login mit bestehendem Cookie|Ja, geht. Verfall des Cookies kann sowohl absolut "X Stunden nach dem Login" wie "nach X Stunden Inaktivität" konfiguriert werden.|Tech|06.05.2020|
+|9|Scoping bezüglich der Versionen verstehen "Gemeinsame Verwendung": Projektbaum, Projekthierarchie, ...|?|Fach|-|
+|10|Konfiguration von Backlog verstehen|?|Fach|-|
+|11|Wieso kommen beim Rollout-Geschäft ungewünschte Status?|?|Fach|-|
+|12|Bleibt die Identität (URL) eines Tickets beim Verschieben zwischen Projekten stabil?|?|Fach|-|
+
 
 ### Starten ohne das Laden der Beispielkonfiguration (demo data)
 
