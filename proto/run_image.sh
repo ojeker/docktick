@@ -2,6 +2,7 @@
 
 docker run \
   -p 8080:80 \
+  -p 54323:5432 \
   --name openproject \
   -e SECRET_KEY_BASE=secret \
 	-v $(pwd)/.res/pgdata:/var/openproject/pgdata \

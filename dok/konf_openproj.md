@@ -27,6 +27,7 @@ gleich gelagerte Arbeitstypen. Wir erstellen also nicht pro SOGIS-Projekt ein Op
 Um eine Übersicht aller Vorhaben zu gewährleisten, sind alle Projekte Kinder des **"Root-Projektes" SOGIS**. 
 Im Root-Projekt sind die Versionen der Geodaten-Konfigurationen enthalten, da die Work-Items aus mehreren 
 Kindprojekten stammen können.
+Ebenfalls Teil des Root-Projektes sind 
 
 Kind-Projekte:
 * **AGI-Posteingang**: Enthält die neu eingegangenen und noch nicht triagierten Tickets.
@@ -91,11 +92,11 @@ Benutzte Abkürzungen:
 |6|Auth: Anbinden mehrerer LDAP-Verzeichnisse|Ja, geht. In OP-Benutzerverzeichnis ist vermerkt, auf welchem LDAP der Benutzer definiert ist.|Tech|06.05.2020|
 |7|Auth: Mischung von z.B. LDAP (interne Benutzer) mit "default Auth" für externe Benutzer|Ja, geht auch.|Tech|06.05.2020|
 |8|Auth: Auto-Login mit bestehendem Cookie|Ja, geht. Verfall des Cookies kann sowohl absolut "X Stunden nach dem Login" wie "nach X Stunden Inaktivität" konfiguriert werden.|Tech|06.05.2020|
-|9|Scoping bezüglich der Versionen verstehen "Gemeinsame Verwendung": Projektbaum, Projekthierarchie, ...|?|Fach|-|
-|10|Konfiguration von Backlog verstehen|?|Fach|-|
-|11|Wieso kommen beim Rollout-Geschäft ungewünschte Status?|?|Fach|-|
-|12|Bleibt die Identität (URL) eines Tickets beim Verschieben zwischen Projekten stabil?|?|Fach|-|
-
+|9|Scoping bezüglich der Versionen verstehen "Gemeinsame Verwendung": Projektbaum, Projekthierarchie, ...|Unterprojekte: Nur nach unten. Projekthierarchie: Nach unten und oben. Projektbaum: Nach unten, oben und zur Seite (Geschwister) |Fach|14.05.2020|
+|10|Konfiguration von Backlog verstehen|Erfordert die Auswahl der AP-Typen, welche als UserStory respektive als Task dargestellt werden|Fach|14.05.2020|
+|11|Wieso kommen beim Rollout-Geschäft ungewünschte Status?|Weil mit dem Benutzer "admin" eingeloggt - dieser hat per Default alle Übergänge im Angebot. Mit Benutzer "Member" arbeiten|Fach|14.05.2020|
+|12|Bleibt die Identität (URL) eines Tickets beim Verschieben zwischen Projekten stabil?|Ja und Nein. Die Nummer bleibt erhalten. Der "default-link" geht über das Projekt und ist damit nicht stabil. Der z.B. in den Suchresultaten angebotene Permalink ist stabil|Fach|14.05.2020|
+|13|Erstellen von Backup aus "all in one" Image|Den folgenden Befehl ergänzen und ausführen:<br/>docker exec -e PGPASSWORD=openproject  -it $CONTAINER pg_dump -U openproject -d openproject -h localhost > dump.sql|Tech|14.05.2020|
 
 ### Starten ohne das Laden der Beispielkonfiguration (demo data)
 
