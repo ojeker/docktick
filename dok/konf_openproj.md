@@ -97,6 +97,12 @@ Benutzte Abkürzungen:
 |11|Wieso kommen beim Rollout-Geschäft ungewünschte Status?|Weil mit dem Benutzer "admin" eingeloggt - dieser hat per Default alle Übergänge im Angebot. Mit Benutzer "Member" arbeiten|Fach|14.05.2020|
 |12|Bleibt die Identität (URL) eines Tickets beim Verschieben zwischen Projekten stabil?|Ja und Nein. Die Nummer bleibt erhalten. Der "default-link" geht über das Projekt und ist damit nicht stabil. Der z.B. in den Suchresultaten angebotene Permalink ist stabil|Fach|14.05.2020|
 |13|Erstellen von Backup aus "all in one" Image|Den folgenden Befehl ergänzen und ausführen:<br/>docker exec -e PGPASSWORD=openproject  -it $CONTAINER pg_dump -U openproject -d openproject -h localhost > dump.sql|Tech|14.05.2020|
+|14|Projektübersicht. Rich Text Widget über ganzen Bildschirm?|?|Fach|-|
+|15|Erben die Unterprojekte die Berechtigungen der Überprojekte?|?|Fach|-|
+|16|Zusammenhang der Notifizierungseinstellungen und dem Mention (@Benutzer) bzgl. Email-Versand|?|Fach|-|
+|17|Arbeitspackettypen Formularkonfiguration: Alles inkl. Gruppen ausräumen lässt sich nicht speichern..?|?|Fach|-|
+|18|Bedeutung von "In Roadmap standartmässig angezeigt"..?|?|Fach|-|
+|19|Abfragen der verstrichenen Zeit zwischen zwei Statusänderungen (WIP)|?|Fach|-|
 
 ### Starten ohne das Laden der Beispielkonfiguration (demo data)
 
