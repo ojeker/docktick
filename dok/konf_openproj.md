@@ -85,7 +85,7 @@ Benutzte Abkürzungen:
 |Nr|Frage|Antwort|Typ|Donedate|
 |---:|---|---|---|---|
 |1|Ab wann hat die Projekt-Verschachtelungstiefe einen negativen Einfluss auf die Performance?|Verschachtelungstiefe von 3 ist kein Problem. Bei tieferer Verschachtelung abhängig von der Anzahl der Issues|Tech|06.05.2020|
-|2|Tickets in Version einer FE einem Abwicklungs-Projekt zuweisen? Ticket ist gleichzeitig in mehreren OPP relevant.|Ticket kann zu 0-1 Version zugewiesen werden (nicht n). --> Geeignete Konfig muss besprochen werden|Fach|-|  
+|2|Tickets in Version einer FE einem Abwicklungs-Projekt zuweisen? Ticket ist gleichzeitig in mehreren OPP relevant.|Ticket gehört zu genau einem OPP, optional in einer Version. Dem OPP eines Projektes kann glaub's ein Issue "quer" zugeordnet werden - ausprobieren...|Fach|27.05.2020|  
 |3|Tagesgeschäft in Vorhaben dem Layer-Rollout zuweisen?|Kein Problem. Layer-Rollout ist Version des Root-OPP "SOGIS" Der Version können Tickets aller Kind-OPP zugewiesen werden|Fach|06.05.2020|
 |4|Mit Docker starten, um die Konfiguration hinzubekommen, und dann migrieren?|Kein Problem, solange von genau einer Quell-Instanz migriert wird|Tech|06.05.2020|
 |5|Starten ohne das Laden der Beispielkonfiguration (demo data)|Kein Problem. Docker compose anpassen und anschliessend mittels Rails-Console Admin-Benutzer anlegen|Tech|06.05.2020|
@@ -97,12 +97,13 @@ Benutzte Abkürzungen:
 |11|Wieso kommen beim Rollout-Geschäft ungewünschte Status?|Weil mit dem Benutzer "admin" eingeloggt - dieser hat per Default alle Übergänge im Angebot. Mit Benutzer "Member" arbeiten|Fach|14.05.2020|
 |12|Bleibt die Identität (URL) eines Tickets beim Verschieben zwischen Projekten stabil?|Ja und Nein. Die Nummer bleibt erhalten. Der "default-link" geht über das Projekt und ist damit nicht stabil. Der z.B. in den Suchresultaten angebotene Permalink ist stabil|Fach|14.05.2020|
 |13|Erstellen von Backup aus "all in one" Image|Den folgenden Befehl ergänzen und ausführen:<br/>docker exec -e PGPASSWORD=openproject  -it $CONTAINER pg_dump -U openproject -d openproject -h localhost > dump.sql|Tech|14.05.2020|
-|14|Projektübersicht. Rich Text Widget über ganzen Bildschirm?|?|Fach|-|
-|15|Erben die Unterprojekte die Berechtigungen der Überprojekte?|?|Fach|-|
-|16|Zusammenhang der Notifizierungseinstellungen und dem Mention (@Benutzer) bzgl. Email-Versand|?|Fach|-|
-|17|Arbeitspackettypen Formularkonfiguration: Alles inkl. Gruppen ausräumen lässt sich nicht speichern..?|?|Fach|-|
-|18|Bedeutung von "In Roadmap standartmässig angezeigt"..?|?|Fach|-|
-|19|Abfragen der verstrichenen Zeit zwischen zwei Statusänderungen (WIP)|?|Fach|-|
+|14|Projektübersicht. Rich Text Widget über ganzen Bildschirm?|Länge richtet sich nach dem Inhalt des Widget|Fach|27.05.2020|
+|15|Erben die Unterprojekte die Berechtigungen der Überprojekte?|Nein, sind diesbezüglich vollständig Eigenständig |Fach|27.05.2020|
+|16|Zusammenhang der Notifizierungseinstellungen und dem Mention (@Benutzer) bzgl. Email-Versand|Solange bei den Kontoeinstellungen nicht "keine Benachrichtigung" gewählt ist, lösen die Mentions eine Email aus|Fach|27.05.2020|
+|17|Arbeitspackettypen Formularkonfiguration: Alles inkl. Gruppen ausräumen lässt sich nicht speichern..?|Korrekt. Es muss mindestens eine Gruppe konfiguriert sein|Fach|27.05.2020|
+|18|Bedeutung von "In Roadmap standartmässig angezeigt"..?|Bestimmt, ob ein AP-Typ in der Roadmap-Ansicht der Version des OPP per default angezeigt wird|Fach|27.05.2020|
+|19|Abfragen der verstrichenen Zeit zwischen zwei Statusänderungen (WIP)|Geht noch nicht. Erhalte Ref auf Feature Request und Anweisungen, wie dies abgefragt werden kann.|Fach|-|
+|20|Zugriff auf mindestens wöchentlichen DB-Dump bei Hosting auf openproject.com|?|SLA|27.05.2020|
 
 ### Starten ohne das Laden der Beispielkonfiguration (demo data)
 
