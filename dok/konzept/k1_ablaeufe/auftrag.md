@@ -1,6 +1,6 @@
 # Auftrag
 
-![Auftrag](puml_output/flow_auftrag.png)
+![Auftrag](../../puml_output/flow_auftrag.png)
 
 ## Punktuelle Erläuterungen
  

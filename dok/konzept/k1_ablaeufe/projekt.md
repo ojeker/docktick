@@ -25,7 +25,7 @@ Zweck des Meetings:
 
 ## Projekt-Umsetzung
 
-![GIS-Projekt](puml_output/flow_gisprojekt_nach_init.png)
+![GIS-Projekt](../../puml_output/flow_gisprojekt_nach_init.png)
 
 ### Punktuelle Erläuterungen zum Ablauf
 
@@ -45,7 +45,7 @@ Projekt-Kickoff mit dem Projektteam:
 
 # Von AGI initiiertes Projekt
 
-![AGI Projekt](puml_output/flow_agiprojekt.png)
+![AGI Projekt](../../puml_output/flow_agiprojekt.png)
 
 Liegt vor, wenn das Vorhaben grösser und oder komplexer ist wie ein Auftrag
 

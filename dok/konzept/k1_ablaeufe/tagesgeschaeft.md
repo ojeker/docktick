@@ -13,14 +13,14 @@ von "Entwurf" auf "Bereit" setzt.
 Falls keinem Rollout zugewiesen und von überschaubarer Komplexität und Umfang, 
 wird die Arbeit mittels "Tagesgeschäfts-Ticket" abgewickelt.
 
-![Tagesgeschäft](puml_output/flow_ticket.png)
+![Tagesgeschäft](../../puml_output/flow_ticket.png)
 
 ## Ticket-Triage
 
 Anfragen von Fachstellen können unterschiedlichste Arbeiten auslösen. Mittels Ticket-Triage werden die Tickets
 klassiert und auf den richtigen Weg geschickt.
 
-![Triage](puml_output/flow_triage.png)
+![Triage](../../puml_output/flow_triage.png)
 
 ## Bemerkungen zu einzelnen Schritten
 
@@ -66,7 +66,7 @@ Tickets aufgeführt, welche weder einem Release noch einem Rollout zugewiesen si
 
 # Ablauf für Layer-Rollout-Ticket
 
-![Rollout-Ticket](puml_output/flow_rollout.png)
+![Rollout-Ticket](../../puml_output/flow_rollout.png)
 
 ## Bemerkungen
 
