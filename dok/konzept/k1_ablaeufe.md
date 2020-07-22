@@ -1,4 +1,4 @@
-# Vorhaben
+# K1 Abläufe der Vorhaben
 
 Alle ausgelösten Tätigkeiten des AGI sind Vorhaben. Abhängig von Grösse und Komplexität wird
 unterschieden zwischen den folgenden Vorhabenstypen:
@@ -25,6 +25,7 @@ Im Rahmen dieses Projektes "docktick" werden die Gemeinsamkeiten und Unterschied
 |Phase|-|Dient dem geordneten Fortschreiten in Projekten und Aufträgen. Der Stand des Vorhabens wird bei einem Phasenübergang jeweils im Mehr-Augen-Prinzip überprüft.|
 |PMP|Dokument|Projektmanagement-Plan des AGI. Umfasst die wichtigsten Informationen (Rollen, Phasen, ...) bezüglich der Abwicklung eines Projektes. In den PMP wurden die für ein AGI-Projekt relevanten Hermes-Dokumente in Kapitelform des PMP übernommen.|
 |SPOC|Rolle|**S**ingle **P**oint **O**f **C**ontact. Zentrale Ansprechperson für alle Anliegen eines Amtes bezüglich des AGI.|
+|Vorhaben|-|Ablaufende Menge an Arbeit mit Anfang und Ende. Vorhabenstypen im AGI: Tagesgeschäft, Auftrag, Projekt|
 
 ### Details zu Begriffen
  
@@ -68,12 +69,13 @@ Projekte und Tagesgeschäft benötigen die folgend beschriebene Ausdetaillierung
 |Tagesgeschäft|Abgeschlossen|Abgeschlossen|
 
 
-## Links auf die Ablaufdiagramme
+## Links auf die Ablaufdiagramme pro Vorhabenstyp:
+* [**Tagesgeschäft**](k1_ablaeufe/tagesgeschaeft.md)
+* [**Aufträge**](k1_ablaeufe/auftrag.md)
+* [**Projekte**](k1_ablaeufe/projekt.md)
 
-[**Projekte**](projekt.md)
-
-[**Aufträge**](auftrag.md)
-
-[**Tagesgeschäft**](tagesgeschaeft.md)
+Weitere Dokumente:
+* [**Trio-Projekte:**](k1_ablaeufe/projekt_bermuda.md) Entwurf des Ablaufes in einem Projekt Fachamt - AIO - AGI.
+* [**Konfiguration in Openproject**](k1_ablaeufe/konf_openproject.md) Notizen zu der Konfiguration in OpenProject.
 
 
