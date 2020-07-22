@@ -16,7 +16,7 @@ bezogen?) then (nein)
     zuweisen;
     stop
     note right
-    	(1)
+    	(TG, DEV)
     end note
   else (nein)
     :An GDI-
@@ -24,7 +24,7 @@ bezogen?) then (nein)
     zuweisen;
     stop
     note right
-    	(1)
+    	(TG)
     end note
   endif
 else (ja)
@@ -38,7 +38,7 @@ else (ja)
     zuweisen;
     stop
     note right
-    	(2)
+    	(ROLL)
     end note
   else (nein)
     |Ticket-Triage|
@@ -46,12 +46,15 @@ else (ja)
     zuweisen;
     stop
     note right
-    	(1)
+    	(AUF, PRJ)
     end note
   endif
 endif
 legend left
-  (1): Weiter mit Basisablauf, Mitarbeiter B
-  (2): Weiter mit "Ablauf für Layer-Rollout-Ticket"
+  (TG): 	Tagesgeschäft
+  (DEV):	Software-Entwicklungsarbeit
+  (AUF):	Auftrag
+  (PRJ):	Projekt
+  (ROLL):	Rollout-Geschäft
 end legend
 @enduml
