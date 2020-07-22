@@ -16,15 +16,13 @@ organisieren;
 |AGI-Mitarbeiter|
 :WIE-Teil
 erarbeiten;
-|SPOC|
+:Umsetzung durch SPOC
+freigeben lassen;
 :bereit}
-:Umsetzung
-freigeben;
 :umsetzung}
-|AGI-Mitarbeiter|
 :Umsetzen;
-|GIS-Koordinator|
-:Abnehmen;
+:Durch GIS-Koordinator
+abnehmen lassen;
 :abgeschlossen}
 end
 @enduml

@@ -76,6 +76,6 @@ Projekte und Tagesgeschäft benötigen die folgend beschriebene Ausdetaillierung
 
 Weitere Dokumente:
 * [**Trio-Projekte:**](k1_ablaeufe/projekt_bermuda.md) Entwurf des Ablaufes in einem Projekt Fachamt - AIO - AGI.
-* [**Konfiguration in Openproject**](k1_ablaeufe/konf_openproject.md) Notizen zu der Konfiguration in OpenProject.
+* [**Konfiguration in Openproject**](k1_ablaeufe/konf_openproj.md) Notizen zu der Konfiguration in OpenProject.
 
 
