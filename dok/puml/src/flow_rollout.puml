@@ -1,6 +1,8 @@
 @startuml
 |AGI-Mitarbeiter|
 
+start
+:ruhend.../
 :umsetzung}
 
 :Arbeiten

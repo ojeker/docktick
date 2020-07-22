@@ -2,7 +2,7 @@ Erläuterungen zu den Anwendungsfällen jeweils top-down geordnet gemäss Diagra
 
 # Anwendungsfälle Subsysteme
 
-![Anwendungsfälle Subsysteme](puml_output/uc_subsystem.png)
+![Anwendungsfälle Subsysteme](../../puml_output/uc_subsystem.png)
 
 ## Releasegebundene Anpassung definieren
 
@@ -34,7 +34,7 @@ Definition eines Weiterentwicklungs-Tickets bezüglich einer nicht erfüllten Be
 
 # Anwendungsfälle Koordination
 
-![Anwendungsfälle Projekte](puml_output/uc_projekt.png)
+![Anwendungsfälle Projekte](../../puml_output/uc_projekt.png)
 
 ## Projekt pflegen
 
@@ -108,7 +108,7 @@ Projekt mit SPOC kurz besprechen und anschliessend Antrag erfassen
 
 # Anwendungsfälle Erarbeitung
 
-![Anwendungsfälle Erarbeitung](puml_output/uc_erarbeitung.png)
+![Anwendungsfälle Erarbeitung](../../puml_output/uc_erarbeitung.png)
 
 ## Vorhaben / Vorhabensteil erarbeiten
 

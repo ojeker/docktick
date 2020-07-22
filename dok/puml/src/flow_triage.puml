@@ -13,13 +13,19 @@ bezogen?) then (nein)
   if (FE-bezogen?) then (ja)
     :An Anwendungs-
     Verantwortlichen
-    übergeben;
+    zuweisen;
     stop
+    note right
+    	(1)
+    end note
   else (nein)
     :An GDI-
     Koordinator
-    übergeben;
+    zuweisen;
     stop
+    note right
+    	(1)
+    end note
   endif
 else (ja)
   :mit SPOC
@@ -29,13 +35,23 @@ else (ja)
     :bereit}
     :An AGI-
     Mitarbeiter
-    übergeben;
+    zuweisen;
     stop
+    note right
+    	(2)
+    end note
   else (nein)
     |Ticket-Triage|
   	:An SPOC
-    übergeben;
+    zuweisen;
     stop
+    note right
+    	(1)
+    end note
   endif
 endif
+legend left
+  (1): Weiter mit Basisablauf, Mitarbeiter B
+  (2): Weiter mit "Ablauf für Layer-Rollout-Ticket"
+end legend
 @enduml
